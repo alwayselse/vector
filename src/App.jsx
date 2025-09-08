@@ -6,6 +6,16 @@ import samPhoto from './assets/sam.jpeg'
 import nikhilPhoto from './assets/nikhil.jpeg'
 import tapasiPhoto from './assets/Tapasi.webp'
 import remaPhoto from './assets/rema_mam.jpeg'
+import harshiniPhoto from './assets/Harshini.webp'
+import vikasPhoto from './assets/Vikas.webp'
+
+// Event images imports
+import event1 from './assets/events/1.jpg'
+import event2 from './assets/events/1741090422309.jpeg'
+import event3 from './assets/events/5.jpg'
+import event4 from './assets/events/IMG_20250213_120643396.jpg'
+import event5 from './assets/events/IMG_20250213_124224521.jpg'
+import event6 from './assets/events/WhatsApp Image 2025-09-09 at 02.00.33_49081d1a.jpg'
 
 function App() {
   return (
@@ -179,7 +189,7 @@ function App() {
               <p className="text-gray-400 mb-4">Core Member</p>
               <div className="flex justify-center space-x-4">
                 <a 
-                  href="https://www.linkedin.com/in/shruthi-kannan-40a95a2b7/" 
+                  href="https://www.linkedin.com/in/shruthi-kannan/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-blue-400 hover:text-blue-300 transition-colors"
@@ -207,7 +217,7 @@ function App() {
               <p className="text-gray-400 mb-4">Core Member</p>
               <div className="flex justify-center space-x-4">
                 <a 
-                  href="https://www.linkedin.com/in/samyuktha-pillai-0bb9842b2/" 
+                  href="https://www.linkedin.com/in/samyuktha-pillai-ba53752a1/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-blue-400 hover:text-blue-300 transition-colors"
@@ -235,7 +245,7 @@ function App() {
               <p className="text-gray-400 mb-4">Core Member</p>
               <div className="flex justify-center space-x-4">
                 <a 
-                  href="https://www.linkedin.com/in/nikhil-jha-89b8b6244/" 
+                  href="https://www.linkedin.com/in/nikhil-jha-0424ab208/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-blue-400 hover:text-blue-300 transition-colors"
@@ -267,7 +277,7 @@ function App() {
             </p>
           </div>
           
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
             {/* Tapasi Mam - HOD */}
             <div className="bg-stone-700 border border-gray-500 rounded-xl p-8 text-center max-w-sm hover:bg-stone-600 transition-all duration-300">
               <img 
@@ -304,7 +314,7 @@ function App() {
               <p className="text-gray-400 text-sm mb-4">Vector Data Science Club</p>
               <div className="flex justify-center">
                 <a 
-                  href="https://www.linkedin.com/in/dr-rema-devi-6a3b3a1bb/" 
+                  href="https://www.linkedin.com/in/drremavenkitaraman/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-blue-400 hover:text-blue-300 transition-colors"
@@ -314,6 +324,137 @@ function App() {
                   </svg>
                 </a>
               </div>
+            </div>
+
+            {/* Harshini - Faculty Coordinator */}
+            <div className="bg-stone-700 border border-gray-500 rounded-xl p-8 text-center max-w-sm hover:bg-stone-600 transition-all duration-300">
+              <img 
+                src={harshiniPhoto} 
+                alt="Harshini N" 
+                className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-cyan-400"
+              />
+              <h3 className="text-2xl font-semibold mb-2 text-cyan-400">Ms. Harshini N</h3>
+              <p className="text-gray-300 mb-4 font-semibold">Faculty Coordinator</p>
+              <p className="text-gray-400 text-sm mb-4">Vector Data Science Club</p>
+              <div className="flex justify-center">
+                <a 
+                  href="https://www.linkedin.com/in/harshini23/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clipRule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            {/* Vikas - Faculty Coordinator */}
+            <div className="bg-stone-700 border border-gray-500 rounded-xl p-8 text-center max-w-sm hover:bg-stone-600 transition-all duration-300">
+              <img 
+                src={vikasPhoto} 
+                alt="Vikas Baranwal" 
+                className="w-24 h-24 rounded-full mx-auto mb-6 object-cover border-4 border-orange-400"
+              />
+              <h3 className="text-2xl font-semibold mb-2 text-orange-400">Mr. Vikas Baranwal</h3>
+              <p className="text-gray-300 mb-4 font-semibold">Faculty Coordinator</p>
+              <p className="text-gray-400 text-sm mb-4">Vector Data Science Club</p>
+              <div className="flex justify-center">
+                <a 
+                  href="https://www.linkedin.com/in/vikas-baranwal-0784a4261/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clipRule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Events Gallery Auto-Scroller */}
+      <section className="px-6 py-16 bg-stone-900 overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+              Our Events
+            </h2>
+            <p className="text-xl text-gray-400">
+              Moments from our amazing Data Science journey
+            </p>
+          </div>
+          
+          {/* Auto-scrolling container */}
+          <div className="relative overflow-hidden">
+            <div className="flex animate-scroll-infinite space-x-6">
+              {/* First set of images */}
+              <img 
+                src={event1} 
+                alt="Event 1" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+              <img 
+                src={event2} 
+                alt="Event 2" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+              <img 
+                src={event3} 
+                alt="Event 3" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+              <img 
+                src={event4} 
+                alt="Event 4" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+              <img 
+                src={event5} 
+                alt="Event 5" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+              <img 
+                src={event6} 
+                alt="Event 6" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+              
+              {/* Duplicate set for seamless loop */}
+              <img 
+                src={event1} 
+                alt="Event 1" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+              <img 
+                src={event2} 
+                alt="Event 2" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+              <img 
+                src={event3} 
+                alt="Event 3" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+              <img 
+                src={event4} 
+                alt="Event 4" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+              <img 
+                src={event5} 
+                alt="Event 5" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
+              <img 
+                src={event6} 
+                alt="Event 6" 
+                className="h-64 w-96 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 flex-shrink-0"
+              />
             </div>
           </div>
         </div>
@@ -346,8 +487,24 @@ function App() {
               </svg>
             </a>
           </div>
+          
+          {/* Contact Information */}
+          <div className="mb-6">
+            <h3 className="text-lg font-semibold text-white mb-2">Contact Us</h3>
+            <a 
+              href="mailto:datascienceclub.sss@msruas.ac.in" 
+              className="text-gray-400 hover:text-blue-400 transition-colors inline-flex items-center space-x-2"
+            >
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              <span>datascienceclub.sss@msruas.ac.in</span>
+            </a>
+          </div>
+          
           <p className="text-gray-400">
-            © 2024 Vector Data Science Club - RUAS. All Rights Reserved.
+            © 2025 Vector Data Science Club - RUAS.
           </p>
         </div>
       </footer>
